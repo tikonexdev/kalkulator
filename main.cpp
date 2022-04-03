@@ -3,8 +3,7 @@
 using namespace std;
 int x;
 int y;
-long long num = 77778;
-long long sqr = num * num;
+long wynik;
 int wybor;
 int main()
 {while(true){
@@ -34,7 +33,9 @@ cout <<"suma = " << x-y;
 }
 break;
 case 3:{
-cout  << sqr ;
+long wynik = x * y;
+cout << wynik <<endl;
+system("cls");
 }
 case 4:{
     cout << x/y;
@@ -50,5 +51,6 @@ break;
 }
 }
 getchar();
+system("cls");
 }
 }
