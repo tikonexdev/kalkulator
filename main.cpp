@@ -1,17 +1,18 @@
 #include <iostream>
-
+#include <cstdlib>
+#include <conio.h>
+#include <stdio.h>
 using namespace std;
 int x;
 int y;
 long wynik;
-int wybor;
+char wybor;
 int main()
 {while(true){
 
     cout << "podaj pierwsza liczba" << endl;
     cin >>x;
 cout << " podaj druga liczba "<<endl;
-cin >>y;
 cout <<"menu glowne" <<endl ;
 cout << "************************" <<endl;
 cout << "1. dodawanie" <<endl;
@@ -21,26 +22,25 @@ cout <<"4. dzielenie" <<endl;
 cout <<"5. wyjdz" <<endl;
 cout << "************************" <<endl;
 cout << "wybierz opcje " << endl;
-cin >> wybor;
+wynik=getch();
 cout <<endl;
 switch (wybor){
-    case 1:{
+    case '1':{
         cout <<"suma= " << x + y;
     }
     break;
-case 2:{
+case '2':{
 cout <<"suma = " << x-y;
 }
 break;
-case 3:{
+case '3':{
 long wynik = x * y;
-cout << wynik <<endl;
-system("cls");
+cout << "wynik to : "<< wynik <<endl;
 }
-case 4:{
+case '4':{
     cout << x/y;
 break;
-case 5:{
+case '5':{
     exit(0);
 }
 default :
@@ -51,6 +51,5 @@ break;
 }
 }
 getchar();
-system("cls");
 }
 }
